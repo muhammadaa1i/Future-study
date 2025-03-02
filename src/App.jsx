@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Students from './pages/Students/Students'
 import Programs from './pages/Programs/Programs'
 import Universities from './pages/Universities/Universities'
-import Services from './pages/Services/Services'
+import Turkey from './pages/Turkey/Turkey'
 
 const App = () => {
   return (
@@ -14,7 +14,7 @@ const App = () => {
           <Route path="/students" element={<Students />} />
           <Route path="/programs" element={<Programs />} />
           <Route path="/universities" element={<Universities />} />
-          <Route path="/services" element={<Services />} />
+          <Route path="/turkey" element={<Turkey /> } />
         </Route>
       </Routes>
     </BrowserRouter>
