@@ -8,6 +8,7 @@ const Layout = () => {
     const [isOpen, setIsOpen] = useState(false);
     const location = useLocation();
     const pathname = location.pathname;
+    const [isImageLoaded, setIsImageLoaded] = useState(false);
 
     useEffect(() => {
         if (isOpen) {
@@ -21,14 +22,22 @@ const Layout = () => {
         };
     }, [isOpen]);
 
+    useEffect(() => {
+        const img = new Image();
+        img.src = students;
+        img.onload = () => {
+            setIsImageLoaded(true);
+        };
+    }, []);
+
     return (
         <>
-            <header className='header w-full h-[10vh]'>
+            <header className='header w-[100vw] h-[10vh]'>
 
-                <nav className='nav w-full z-30 h-[10vh] bg-[#004D91] flex flex-row items-center justify-between fixed mb-8 shadow-2xl'>
+                <nav className='nav w-[100vw] z-30 h-[10vh] bg-[#004D91] flex flex-row items-center justify-between fixed top-0 left-0 shadow-2xl overflow-hidden '>
 
                     <a href="/">
-                        <img className='w-[60px] h-[10vh]' src={logo} alt="logo of company" />
+                        <img className='h-[10vh]' src={logo} alt="logo of company" />
                     </a>
                     <div className='flex flex-row items-center justify-between gap-4'>
                         <a className='text-white text-[16px] md:hidden' href="tel:+998 77 144 57 77">+998 77 144 57 77</a>
@@ -101,6 +110,11 @@ const Layout = () => {
 
             </header>
 
+            {!isImageLoaded && (
+                <div className="absolute inset-0 bg-gray-300 animate-pulse"></div>
+            )}
+
+
             <div
                 className='hero w-[100vw] h-[70vh] flex justify-center items-center'
                 style={{
@@ -112,7 +126,7 @@ const Layout = () => {
                 <h1 className='main-text w-full max-w-[400px] text-xl md:max-w-[700px] md:text-3xl lg:max-w-[1000px] lg:text-4xl lg:px-5 lg:py-4 xl:text-5xl text-center text-white uppercase font-semibold px-4 py-3 rounded-2xl'>
                     <TypeAnimation
                         sequence={[
-                            "Future Study Consulting – Sizning Kelajagingizga Yo’l!", 
+                            "Future Study Consulting – Sizning Kelajagingizga Yo’l!",
                         ]}
                         speed={50}
                         cursor={false}
@@ -131,7 +145,9 @@ const Layout = () => {
                 <Outlet />
             </main>
 
-            <footer className="max-w-[1536px] m-auto w-full max-sm:px-6 px-4 min-[450px]:w-[80%] md:w-full">
+            <footer
+                data-aos="zoom-in"
+                className="max-w-[1536px] m-auto w-full max-sm:px-6 px-4 min-[450px]:w-[80%] md:w-full">
                 <div className="footer container flex flex-col md:flex-row gap-8 justify-between items-center bg-[#043d6e] rounded-3xl m-auto my-5 h-auto text-white px-6 py-5 xl:px-12">
 
                     <section className="contacts w-full max-w-[300px] h-auto flex flex-col gap-5 md:items-start">
@@ -162,7 +178,7 @@ const Layout = () => {
                             <input required type="text" placeholder="Familiyangiz" className="w-full bg-white p-2 text-black outline-none rounded-md" />
                             <input required type="number" placeholder="Telefon raqamingiz" className="w-full bg-white p-2 text-black outline-none rounded-md" />
                             <textarea required className="w-full h-[150px] bg-white p-2 text-black outline-none rounded-md" placeholder="Fikringiz"></textarea>
-                            <button type="submit" className="w-full h-10 bg-[#1894b3] text-black rounded-lg font-medium">Yuborish</button>
+                            <button type="submit" className="w-full h-10 bg-[#1894b3] text-white rounded-lg font-medium">Yuborish</button>
                         </form>
                     </section>
 
