@@ -25,10 +25,10 @@ const Layout = () => {
         <>
             <header className='header w-full h-[10vh]'>
 
-                <nav className='nav w-full z-30 h-[10vh] bg-[#38449A] flex flex-row items-center justify-between fixed mb-8 shadow-2xl'>
+                <nav className='nav w-full z-30 h-[10vh] bg-[#004D91] flex flex-row items-center justify-between fixed mb-8 shadow-2xl'>
 
                     <a href="/">
-                        <img className='w-[75px] h-[10vh]' src={logo} alt="logo of company" />
+                        <img className='w-[60px] h-[10vh]' src={logo} alt="logo of company" />
                     </a>
                     <div className='flex flex-row items-center justify-between gap-4'>
                         <a className='text-white text-[16px] md:hidden' href="tel:+998 77 144 57 77">+998 77 144 57 77</a>
@@ -65,33 +65,33 @@ const Layout = () => {
                         </div>
                         <ul className="flex flex-col gap-4 text-2xl mt-8 ml-8 max-w-[500px]:ml-8 max-sm:text-lg text-start">
                             <li className={`relative flex flex-row gap-2 items-center`}>
-                                <Link className="text-[#38449A] no-underline" to="/" onClick={() => setIsOpen(false)}>Biz haqimizda</Link>
+                                <Link className="text-[#004D91] no-underline" to="/" onClick={() => setIsOpen(false)}>Biz haqimizda</Link>
                                 {pathname === '/' && (
-                                    <div className={`underline absolute left-3 sm:left-0 bottom-[-6px] max-sm:left-0 ${isOpen ? 'sm:w-[200px]' : 'w-0'} ${isOpen ? 'w-[150px]' : 'w-0'} h-[2px] bg-[#38449A] transition-all duration-[1000ms] ease-in-out`}></div>
+                                    <div className={`underline absolute left-3 sm:left-0 bottom-[-6px] max-sm:left-0 ${isOpen ? 'sm:w-[200px]' : 'w-0'} ${isOpen ? 'w-[150px]' : 'w-0'} h-[2px] bg-[#004D91] transition-all duration-[1000ms] ease-in-out`}></div>
                                 )}
                             </li>
                             <li className={`relative flex flex-row gap-2 items-center`}>
-                                <Link className="text-[#38449A] no-underline" to="/students" onClick={() => setIsOpen(false)}>O'quvchilarimiz</Link>
+                                <Link className="text-[#004D91] no-underline" to="/students" onClick={() => setIsOpen(false)}>O'quvchilarimiz</Link>
                                 {pathname === '/students' && (
-                                    <div className={`underline absolute left-3 sm:left-0 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[150px]' : 'w-0'} ${isOpen ? 'sm:w-[200px]' : 'w-0'} h-[2px] bg-[#38449A] transition-all duration-[1000ms] ease-in-out`}></div>
+                                    <div className={`underline absolute left-3 sm:left-0 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[150px]' : 'w-0'} ${isOpen ? 'sm:w-[200px]' : 'w-0'} h-[2px] bg-[#004D91] transition-all duration-[1000ms] ease-in-out`}></div>
                                 )}
                             </li>
                             <li className={`relative flex flex-row gap-2 items-center`}>
-                                <Link className="text-[#38449A] no-underline" to="/universities" onClick={() => setIsOpen(false)}>Universitetlar</Link>
+                                <Link className="text-[#004D91] no-underline" to="/universities" onClick={() => setIsOpen(false)}>Universitetlar</Link>
                                 {pathname === '/universities' && (
-                                    <div className={`underline absolute left-3 sm:left-0 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[150px]' : 'w-0'} ${isOpen ? 'sm:w-[200px]' : 'w-0'} h-[2px] bg-[#38449A] transition-all duration-[1000ms] ease-in-out`}></div>
+                                    <div className={`underline absolute left-3 sm:left-0 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[150px]' : 'w-0'} ${isOpen ? 'sm:w-[200px]' : 'w-0'} h-[2px] bg-[#004D91] transition-all duration-[1000ms] ease-in-out`}></div>
                                 )}
                             </li>
                             <li className={`relative flex flex-row gap-2 items-center`}>
-                                <Link className="text-[#38449A] no-underline" to="/programs" onClick={() => setIsOpen(false)}>Dasturlar</Link>
+                                <Link className="text-[#004D91] no-underline" to="/programs" onClick={() => setIsOpen(false)}>Dasturlar</Link>
                                 {pathname === '/programs' && (
-                                    <div className={`underline absolute left-3 sm:left-0 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[150px]' : 'w-0'} ${isOpen ? 'sm:w-[200px]' : 'w-0'} h-[2px] bg-[#38449A] transition-all duration-[1000ms] ease-in-out`}></div>
+                                    <div className={`underline absolute left-3 sm:left-0 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[150px]' : 'w-0'} ${isOpen ? 'sm:w-[200px]' : 'w-0'} h-[2px] bg-[#004D91] transition-all duration-[1000ms] ease-in-out`}></div>
                                 )}
                             </li>
                             <li className={`relative flex flex-row gap-2 items-center`}>
-                                <Link className="text-[#38449A] no-underline" to="/turkey" onClick={() => setIsOpen(false)}>Turkiya</Link>
+                                <Link className="text-[#004D91] no-underline" to="/turkey" onClick={() => setIsOpen(false)}>Turkiya</Link>
                                 {pathname === '/turkey' && (
-                                    <div className={`underline absolute left-3 sm:left-0 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[150px]' : 'w-0'} ${isOpen ? 'sm:w-[200px]' : 'w-0'} h-[2px] bg-[#38449A] transition-all duration-[1000ms] ease-in-out`}></div>
+                                    <div className={`underline absolute left-3 sm:left-0 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[150px]' : 'w-0'} ${isOpen ? 'sm:w-[200px]' : 'w-0'} h-[2px] bg-[#004D91] transition-all duration-[1000ms] ease-in-out`}></div>
                                 )}
                             </li>
                         </ul>
@@ -132,7 +132,7 @@ const Layout = () => {
             </main>
 
             <footer className="max-w-[1536px] m-auto w-full max-sm:px-6 px-4 min-[450px]:w-[80%] md:w-full">
-                <div className="footer container flex flex-col md:flex-row gap-8 justify-between items-center bg-[#1e265f] rounded-3xl m-auto my-5 h-auto text-white px-6 py-5 xl:px-12">
+                <div className="footer container flex flex-col md:flex-row gap-8 justify-between items-center bg-[#043d6e] rounded-3xl m-auto my-5 h-auto text-white px-6 py-5 xl:px-12">
 
                     <section className="contacts w-full max-w-[300px] h-auto flex flex-col gap-5 md:items-start">
                         <div className="max-w-[225px] w-full flex flex-col gap-3 text-start max-md:m-auto">
@@ -162,7 +162,7 @@ const Layout = () => {
                             <input required type="text" placeholder="Familiyangiz" className="w-full bg-white p-2 text-black outline-none rounded-md" />
                             <input required type="number" placeholder="Telefon raqamingiz" className="w-full bg-white p-2 text-black outline-none rounded-md" />
                             <textarea required className="w-full h-[150px] bg-white p-2 text-black outline-none rounded-md" placeholder="Fikringiz"></textarea>
-                            <button type="submit" className="w-full h-10 bg-[#6687d4] text-black rounded-lg font-medium">Yuborish</button>
+                            <button type="submit" className="w-full h-10 bg-[#1894b3] text-black rounded-lg font-medium">Yuborish</button>
                         </form>
                     </section>
 
