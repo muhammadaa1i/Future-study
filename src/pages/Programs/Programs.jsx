@@ -56,8 +56,9 @@ const Programs = () => {
                     onClick={handleScroll}
                     data-aos='zoom-out-up'
                     href='#form'
-                    className='text-white bg-[#004D91] w-[200px] h-10 rounded-xl flex items-center justify-center '>
-                    <h4 className='text-[14px] mr-2'>Hozir murojaat qiling</h4><i className="fa-solid fa-down-long text-[14px]"></i>
+                    className='text-white bg-[#004D91] w-[240px] h-12 rounded-xl flex items-center justify-center '>
+                    <h4 className='text-[18px] mr-2'>Hozir murojaat qiling</h4>
+                    <i className="fa-solid fa-down-long text-[18px] mt-1.5"></i>
                 </a>
             </div>
 
@@ -74,20 +75,20 @@ const Programs = () => {
                 <section className="flex flex-col items-start mt-8 max-sm:mb-[-10px]">
                     <h1
                         data-aos="fade-right"
-                        className="text-xl text-center max-[550px]:text-[16px] md:text-3xl font-semibold uppercase">Turk tili ko'nikmalarini rivojlantirish va til ta'limi yordamlari:</h1>
+                        className="text-2xl text-center max-[550px]:text-[16px] md:text-3xl font-semibold uppercase">Turk tili ko'nikmalarini rivojlantirish va til ta'limi yordamlari:</h1>
                 </section>
 
                 <div className='flex max-[550px]:flex-col gap-6 flex-row justify-between'>
                     <h1
                         data-aos="fade-right"
-                        className="mt-4 max-sm::max-w-[350px] leading-relaxed font-medium lg:max-w-[700px] lg:text-[20px]">
+                        className="mt-4 leading-relaxed font-medium lg:max-w-[700px] lg:text-[20px]">
                         Ona tili turk tili bo'lmagan talabalar uchun turk tilini bilish Turkiyadagi universitetlarda tahsil olmoqchi bo'lganlar uchun juda muhimdir. Bu talabalarga til bilimlarini oshirishga yordam berish uchun turli turk tilini qoʻllab-quvvatlash dasturlari taklif etiladi. Bu dasturlar talabalarga turk tilidan akademik til sifatida samarali foydalanish imkonini berishni maqsad qilgan va odatda universitetlar tomonidan taqdim etiladi.
                     </h1>
                 </div>
 
                 <section
                     data-aos='zoom-in'
-                    className='w-[85vw] h-[40vh] m-auto mt-8 text-white text-center flex items-center justify-center rounded-4xl'
+                    className='w-[85vw] h-[50vh] m-auto mt-8 text-white text-center flex items-center justify-center rounded-4xl'
                     style={{
                         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.712)), url(${st3})`,
                         backgroundRepeat: "no-repeat",
@@ -97,8 +98,9 @@ const Programs = () => {
                     <a
                         onClick={handleScroll}
                         href='#form'
-                        className='text-white bg-[#004D91] w-[200px] h-12 rounded-xl flex items-center justify-center '>
-                        <h4 className='text-[14px] max-w-[150px] w-full'>Ma'lumotlaringizni qoldiring</h4><i className="fa-solid fa-pen-to-square"></i>
+                        className='text-white bg-[#004D91] w-[240px] h-16 rounded-xl flex flex-row items-center justify-evenly '>
+                        <h4 className='text-[18px] max-w-[150px] w-full'>Ma'lumotlaringizni qoldiring</h4>
+                        <i className="fa-solid fa-pen-to-square text-[24px]"></i>
                     </a>
                 </section>
 
@@ -138,7 +140,7 @@ const Programs = () => {
 
                 <section
                     data-aos='zoom-in'
-                    className='w-[80vw] h-[60vh] m-auto mt-8 text-white text-center flex items-center justify-center rounded-4xl'
+                    className='w-[90vw] h-[60vh] m-auto mt-8 text-white text-center flex items-center justify-center rounded-4xl'
                     style={{
                         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.712)), url(${st4})`,
                         backgroundRepeat: "no-repeat",
@@ -148,8 +150,9 @@ const Programs = () => {
                     <a
                         onClick={handleScroll}
                         href='#form'
-                        className='text-white bg-[#004D91] w-[200px] h-12 rounded-xl gap-1 flex items-center justify-center '>
-                        <h4 className='text-[14px] max-w-[150px] w-full'>Biz bilan bo'g'laning</h4><i class="fa-solid fa-headset"></i>
+                        className='text-white bg-[#004D91] w-[240px] h-12 rounded-xl gap-2 flex flex-row items-center  justify-center '>
+                        <h4 className='text-[18px]'>Biz bilan bo'g'laning</h4>
+                        <i class="fa-solid fa-headset text-[18px]"></i>
                     </a>
                 </section>
 

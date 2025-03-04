@@ -63,8 +63,9 @@ const Home = () => {
                     onClick={handleScroll}
                     data-aos='zoom-out-up'
                     href='#form'
-                    className='text-white bg-[#004D91] w-[200px] h-10 rounded-xl flex items-center justify-center '>
-                    <h4 className='text-[14px] mr-2'>Hozir murojaat qiling</h4><i className="fa-solid fa-down-long text-[14px]"></i>
+                    className='text-white bg-[#004D91] w-[240px] h-12 rounded-xl flex flex-row items-center justify-center '>
+                    <h4 className='text-[18px] mr-2'>Hozir murojaat qiling</h4>
+                    <i className="fa-solid fa-down-long text-[18px] mt-1.5"></i>
                 </a>
             </div>
 
