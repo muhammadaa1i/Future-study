@@ -67,7 +67,7 @@ const Programs = () => {
             )}
 
             <section className='w-[90%] m-auto h-auto py-4 bg-[#004D91] mt-4 rounded-2xl'>
-                <h1 data-aos='zoom-in' className='text-2xl text-center font-semibold text-white px-2 max-[550px]:text-xl'>Akademik muvaffaqiyat uchun poydevor qo'yish: Universitetga o'tishdagi muhim qadam</h1>
+                <h1 data-aos='zoom-in' className='text-2xl text-center font-semibold text-white px-2'>Akademik muvaffaqiyat uchun poydevor qo'yish: Universitetga o'tishdagi muhim qadam</h1>
             </section>
 
             <div className="main-content max-w-7xl w-full px-8 m-auto text-[#004D91]">
@@ -75,7 +75,7 @@ const Programs = () => {
                 <section className="flex flex-col items-start mt-8 max-sm:mb-[-10px]">
                     <h1
                         data-aos="fade-right"
-                        className="text-2xl text-center max-[550px]:text-[16px] md:text-3xl font-semibold uppercase">Turk tili ko'nikmalarini rivojlantirish va til ta'limi yordamlari:</h1>
+                        className="text-2xl text-center md:text-3xl font-semibold uppercase">Turk tili ko'nikmalarini rivojlantirish va til ta'limi yordamlari:</h1>
                 </section>
 
                 <div className='flex max-[550px]:flex-col gap-6 flex-row justify-between'>
@@ -110,7 +110,7 @@ const Programs = () => {
                         className="bg-[#004D91] h-[2px] w-[100%] m-auto rounded-lg"></div>
                     <h1
                         data-aos="zoom-in-up"
-                        className="text-xl text-center max-[550px]:text-[16px] md:text-3xl font-semibold uppercase">Akademik til imtihonlari:</h1>
+                        className="text-2xl text-center md:text-3xl font-semibold uppercase">Akademik til imtihonlari:</h1>
                 </section>
 
                 <div className='flex max-[550px]:flex-col gap-6 flex-row justify-between'>
@@ -127,7 +127,7 @@ const Programs = () => {
                         className="bg-[#004D91] h-[2px] w-[100%] m-auto rounded-lg"></div>
                     <h1
                         data-aos="zoom-out"
-                        className="text-xl text-center max-[550px]:text-[16px] md:text-3xl font-semibold uppercase">Ko'p tilli ta'lim imkoniyatlari:</h1>
+                        className="text-2xl text-center md:text-3xl font-semibold uppercase">Ko'p tilli ta'lim imkoniyatlari:</h1>
                 </section>
 
                 <div className='flex max-[550px]:flex-col gap-6 flex-row justify-between'>
@@ -162,7 +162,7 @@ const Programs = () => {
                         className="bg-[#004D91] h-[2px] w-[100%] m-auto rounded-lg"></div>
                     <h1
                         data-aos="zoom-out-up"
-                        className="text-xl text-center max-[550px]:text-[16px] md:text-3xl font-semibold uppercase">Til tayyorlash dasturlari:</h1>
+                        className="text-2xl text-center md:text-3xl font-semibold uppercase">Til tayyorlash dasturlari:</h1>
                 </section>
 
                 <div className='flex max-[550px]:flex-col gap-6 flex-row justify-between'>
