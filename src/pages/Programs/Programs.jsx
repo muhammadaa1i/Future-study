@@ -46,7 +46,7 @@ const Programs = () => {
                 <h1 className='main-text w-full max-w-[400px] text-xl md:max-w-[700px] md:text-3xl lg:max-w-[1000px] lg:text-4xl lg:px-5 lg:py-4 xl:text-5xl text-center text-white uppercase font-semibold px-4 py-3 rounded-2xl'>
                     <TypeAnimation
                         sequence={[
-                            "Universitet tayyorlanish yili",
+                            "Universitetga tayyorlanish yili",
                         ]}
                         speed={50}
                         cursor={false}
@@ -73,6 +73,9 @@ const Programs = () => {
             <div className="main-content max-w-7xl w-full px-8 m-auto text-[#004D91]">
 
                 <section className="flex flex-col items-start mt-8 max-sm:mb-[-10px]">
+                    <div
+                        data-aos="fade-right"
+                        className="bg-[#004D91] h-[2px] w-[100%] m-auto rounded-lg"></div>
                     <h1
                         data-aos="fade-right"
                         className="text-2xl text-center md:text-3xl font-semibold uppercase">Turk tili ko'nikmalarini rivojlantirish va til ta'limi yordamlari:</h1>

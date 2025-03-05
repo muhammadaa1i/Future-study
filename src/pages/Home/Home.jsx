@@ -89,10 +89,10 @@ const Home = () => {
                         className="mt-4 leading-relaxed font-medium lg:max-w-[700px] lg:text-[20px]">
                         Future Study Education Consulting – bu xalqaro ta’lim sohasida yetakchi kompaniyalardan biri bo‘lib, yoshlar uchun dunyoning eng nufuzli universitetlarida o‘qish imkoniyatlarini yaratishga ixtisoslashgan. Biz Turkiya va boshqa mamlakatlardagi top universitetlarga kirish jarayonida abituriyentlarga to‘liq qo‘llab-quvvatlash xizmatlarini taqdim etamiz.
                     </h1>
-                    <video controls
+                    <video controls 
                         poster={poster}
                         data-aos="zoom-in"
-                        className='w-full h-full max-[550px]:m-auto max-h-[450px] max-w-[250px] min-[550px]:mt-[-30px] mr-2 md:max-h-[350px] md:mt-[-30px] min-[900px]:max-w-[200px] rounded-2xl lg:mr-20'
+                        className='w-full h-full max-[550px]:m-auto max-h-[450px] max-w-[250px] min-[550px]:mt-[-30px] mr-2 md:max-h-[350px] md:mt-[-30px] min-[900px]:max-w-[200px] rounded-2xl lg:mr-20 shadow-2xl'
                         onLoadedData={() => setIsLoading(false)}
                         src={mainvid}>
                     </video>
@@ -101,7 +101,7 @@ const Home = () => {
                 <section className="flex flex-col items-start mt-8 max-sm:mb-[-10px]">
                     <div
                         data-aos="fade-right"
-                        className="bg-[#004D91] h-[2px] max-w-[200px] md:max-w-[220px] md:h-[3px] w-full rounded-lg lg:max-w-[260px]"></div>
+                        className="bg-[#020202] h-[2px] max-w-[200px] md:max-w-[220px] md:h-[3px] w-full rounded-lg lg:max-w-[260px]"></div>
                     <h1
                         data-aos="fade-right"
                         className="text-2xl md:text-3xl lg:text-3xl font-semibold uppercase mt-2">Nega Aynan Biz?</h1>

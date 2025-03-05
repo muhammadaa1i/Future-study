@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import logo from '../../images/logo.jpg'
 import { Link, Outlet, useLocation } from 'react-router-dom'
+import Accordion from 'react-bootstrap/Accordion';
 
 const Layout = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -45,13 +46,13 @@ const Layout = () => {
                                 <Link className="no-underline text-[18px] lg:text-xl font-normal" to="/programs">Dasturlar</Link>
                             </li>
                             <li>
-                                <Link className="no-underline text-[18px] font-normal" to="/universities">Universitetlar <i className="fa-solid fa-chevron-down text-white"></i></Link>
+                                <Link className="no-underline text-[18px] font-normal" to="/universities">Universitetlar</Link>
                             </li>
                             <li>
-                                <Link className="no-underline text-[18px] font-normal" to="/services">Xizmatlar <i className="fa-solid fa-chevron-down text-white"></i></Link>
+                                <Link className="no-underline text-[18px] font-normal" to="/services">Xizmatlar</Link>
                             </li>
                             <li>
-                                <Link className="no-underline text-[18px] font-normal" to="/turkey">Turkiya <i className="fa-solid fa-chevron-down text-white"></i></Link>
+                                <Link className="no-underline text-[18px] font-normal" to="/turkey">Turkiya</Link>
                             </li>
                         </ul>
                     </section>
@@ -71,7 +72,7 @@ const Layout = () => {
                                 {pathname === '/' && (
                                     <div className={`underline absolute left-3 sm:left-0 bottom-[-6px] max-sm:left-0 ${isOpen ? 'sm:w-[200px]' : 'w-0'} ${isOpen ? 'w-[160px]' : 'w-0'} h-[2px] bg-[#004D91] transition-all duration-[1000ms] ease-in-out`}></div>
                                 )}
-                            </li>
+                            </li>   
                             <li className={`relative flex flex-row gap-2 items-center`}>
                                 <Link className="text-[#004D91] no-underline flex flex-row items-center gap-1 pl-0.5" to="/programs" onClick={() => setIsOpen(false)}>
                                     <i class="fa-solid fa-universal-access"></i>
