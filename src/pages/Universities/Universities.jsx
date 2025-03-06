@@ -66,12 +66,15 @@ const Universities = () => {
                 <div className="absolute inset-0 bg-gray-300 animate-pulse"></div>
             )}
 
-            <Link to='/kent' className='px-4'>
-                <img
-                    className='max-w-[350px] w-full h-full mx-auto'
-                    src={kent}
-                    alt="Istanbul Kent University" />
-            </Link>
+            <section className='flex flex-col items-center justify-center px-4 py-8'>
+                <Link to='/kent' className='px-4 flex flex-col items-center justify-center border-2 border-[#004D91] rounded-xl max-w-[350px] m-auto w-full h-auto py-5'>
+                    <img
+                        className='max-w-[350px] w-full h-full mx-auto mt-[-30px]'
+                        src={kent}
+                        alt="Istanbul Kent University" />
+                    <Link to='/kent' className='max-w-[350px] w-full h-auto py-2 text-center rounded-2xl text-[18px] text-white bg-[#004D91] mt-[-20px] px-2 '>Universitet haqida ma'lumot olish</Link>
+                </Link>
+            </section>
         </>
     )
 }
