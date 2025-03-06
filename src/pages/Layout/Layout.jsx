@@ -72,7 +72,7 @@ const Layout = () => {
                                 {pathname === '/' && (
                                     <div className={`underline absolute left-3 sm:left-0 bottom-[-6px] max-sm:left-0 ${isOpen ? 'sm:w-[200px]' : 'w-0'} ${isOpen ? 'w-[160px]' : 'w-0'} h-[2px] bg-[#004D91] transition-all duration-[1000ms] ease-in-out`}></div>
                                 )}
-                            </li>   
+                            </li>
                             <li className={`relative flex flex-row gap-2 items-center`}>
                                 <Link className="text-[#004D91] no-underline flex flex-row items-center gap-1 pl-0.5" to="/programs" onClick={() => setIsOpen(false)}>
                                     <i class="fa-solid fa-universal-access"></i>
@@ -91,6 +91,9 @@ const Layout = () => {
                                     </p>
                                 </Link>
                                 {pathname === '/universities' && (
+                                    <div className={`underline absolute left-3 sm:left-0 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[160px]' : 'w-0'} ${isOpen ? 'sm:w-[200px]' : 'w-0'} h-[2px] bg-[#004D91] transition-all duration-[1000ms] ease-in-out`}></div>
+                                )}
+                                {pathname === '/kent' && (
                                     <div className={`underline absolute left-3 sm:left-0 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[160px]' : 'w-0'} ${isOpen ? 'sm:w-[200px]' : 'w-0'} h-[2px] bg-[#004D91] transition-all duration-[1000ms] ease-in-out`}></div>
                                 )}
                             </li>

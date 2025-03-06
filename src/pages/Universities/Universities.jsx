@@ -72,7 +72,7 @@ const Universities = () => {
                         className='max-w-[350px] w-full h-full mx-auto mt-[-30px]'
                         src={kent}
                         alt="Istanbul Kent University" />
-                    <Link to='/kent' className='max-w-[350px] w-full h-auto py-2 text-center rounded-2xl text-[18px] text-white bg-[#004D91] mt-[-20px] px-2 '>Universitet haqida ma'lumot olish</Link>
+                    <div className='max-w-[350px] w-full h-auto py-2 text-center rounded-2xl text-[18px] text-white bg-[#004D91] mt-[-20px] px-2 '>Universitet haqida ma'lumot olish</div>
                 </Link>
             </section>
         </>

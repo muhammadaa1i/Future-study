@@ -6,6 +6,8 @@ import kentvid1 from '../../videos/kentvid1.mp4'
 import poster2 from '../../images/poster2.png'
 import kentvid2 from '../../videos/kentvid2.mp4'
 import poster3 from '../../images/poster3.png'
+import kentvid3 from '../../videos/kentvid3.mp4'
+import poster4 from '../../images/poster4.png'
 
 const Kent = () => {
 
@@ -33,7 +35,11 @@ const Kent = () => {
 
             window.scrollTo({ top: y, behavior: "smooth" });
         }
-    };
+    }
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <>
@@ -228,7 +234,7 @@ const Kent = () => {
                             Istanbul Kent University bakalavriat va magistratura bosqichlarida turli xil yo‘nalishlarni taklif etadi. Quyida universitetning eng mashhur yo‘nalishlari bilan tanishishingiz mumkin:
                         </h1>
 
-                        <span className='w-full h-full flex flex-col gap-4 border-2 border-[#004D91] rounded-3xl p-4'>
+                        <span className='specify w-full h-full flex flex-col gap-4 border-2 border-[#004D91] rounded-3xl p-4 mb-3'>
                             <h1 className='font-bold mb-2 text-center'>
                                 Bakalavriat Yo‘nalishlari
                             </h1>
@@ -325,6 +331,91 @@ const Kent = () => {
                                     </h1>
                                     <h1>
                                         • Sog‘liqni saqlash menejmenti
+                                    </h1>
+                                </span>
+
+                            </span>
+
+                        </span>
+
+                        <video controls
+                            poster={poster4}
+                            data-aos="zoom-in"
+                            className='w-full h-full max-[550px]:m-auto max-h-[450px] max-w-[250px] min-[550px]:mt-[50px] mr-2 md:max-h-[350px] min-[900px]:max-w-[200px] rounded-2xl lg:mr-20 shadow-2xl'
+                            onLoadedData={() => setIsLoading(false)}
+                            src={kentvid3}>
+                        </video>
+
+                        <span className='specify2 w-full h-full flex flex-col gap-4 border-2 border-[#004D91] rounded-3xl mt-4 p-4 mb-3'>
+                            <h1 className='font-bold text-center'>
+                                Talabalar Uchun Yashash Sharoitlari
+                            </h1>
+
+                            <span className='flex flex-col gap-5'>
+
+                                <span className='mt-[-8px]'>
+                                    <h1 className='font-bold mb-3'>
+                                        Istanbul Kent University talabalariga turar joy topishda yordam beradi. Universitet yaqinida joylashgan yotoqxonalardan foydalanish yoki shaharda kvartira ijaraga olish imkoniyatlari mavjud.
+                                    </h1>
+                                    <h1 className='font-bold'>
+                                        Turar joy turlari:
+                                    </h1>
+                                    <h1>
+                                        • Universitet yotoqxonasi – qulay va xavfsiz muhit
+                                    </h1>
+                                    <h1>
+                                        • Ijaraga beriladigan kvartiralar – shaxsiy hayotni saqlash imkoniyati
+                                    </h1>
+                                    <h1>
+                                        • Xususiy yotoqxonalar – shaxsiy xonalar va qulay sharoitlar
+                                    </h1>
+                                </span>
+
+                                <span className='mt-[-8px]'>
+                                    <h1 className='font-bold mb-3'>
+                                        Hujjat Topsirish Jarayoni
+                                    </h1>
+                                    <h1 className='font-bold mb-3'>
+                                        Agar siz Istanbul Kent University-ga o‘qishga kirishni istasangiz, Future Study Consulting sizga bu jarayonda yordam beradi!
+                                    </h1>
+                                    <h1 className='font-bold mb-3'>
+                                        Hujjatlar ro‘yxati:
+                                    </h1>
+                                    <h1>
+                                        • Pasport nusxasi
+                                    </h1>
+                                    <h1>
+                                        • Diplom yoki attestat
+                                    </h1>
+                                    <h1>
+                                        • Baholar varaqasi (transkript)
+                                    </h1>
+                                    <h1>
+                                        • Maktab yoki Universitetni bitirmagan boʻlsangiz malumotnoma kerak boladi
+                                    </h1>
+                                </span>
+
+                                <span className='mt-[-8px]'>
+                                    <h1 className='font-bold mb-3'>
+                                        Qabul qilish bosqichlari:
+                                    </h1>
+                                    <h1>
+                                        • Biz bilan bog‘laning va universitet bo‘yicha maslahat oling
+                                    </h1>
+                                    <h1>
+                                        • Hujjatlaringizni tayyorlang va bizga yuboring
+                                    </h1>
+                                    <h1>
+                                        • Universitetga ariza topshiramiz
+                                    </h1>
+                                    <h1>
+                                        • Qabul natijalari e’lon qilinadi
+                                    </h1>
+                                    <h1>
+                                        • Viza jarayonida yordam olasiz
+                                    </h1>
+                                    <h1>
+                                        • Istanbulga jo‘nab ketasiz va transfer xizmqtimiz ham mavjud
                                     </h1>
                                 </span>
 
