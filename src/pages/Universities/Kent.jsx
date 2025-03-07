@@ -346,7 +346,9 @@ const Kent = () => {
                             src={kentvid3}>
                         </video>
 
-                        <span className='specify2 w-full h-full flex flex-col gap-4 border-2 border-[#004D91] rounded-3xl mt-4 p-4 mb-3'>
+                        <span
+                            data-aos="zoom-in"
+                            className='specify2 w-full h-full flex flex-col gap-4 border-2 border-[#004D91] rounded-3xl mt-4 p-4 mb-3'>
                             <h1 className='font-bold text-center'>
                                 Talabalar Uchun Yashash Sharoitlari
                             </h1>
@@ -422,6 +424,35 @@ const Kent = () => {
                             </span>
 
                         </span>
+
+                        <span
+                            data-aos="zoom-in"
+                            className='specify2 w-full h-full flex flex-col gap-4 border-2 border-[#004D91] rounded-3xl mt-4 p-4 mb-3'>
+                            <h1 className='font-bold text-center'>
+                                Istanbul Kent Universitetiga «FUTURE STUDY» orqali kirish MUTLOQO BEPUL VA IMTIHONSIZ, faqatgina xohlagan bitta yo'nalish tanlab va hujjatingizni bizga yuborishingiz kerak bo’ladi!
+                            </h1>
+
+                            <span className='flex flex-col gap-5'>
+
+                                <span className='mt-[-8px]'>
+                                    <h1 className='mb-3'>
+                                        O'qishga kirganligiz haqida qabul xat esa 24-48soat ichida chiqadi. Qabul xat chiqishi bilan 5-7 kun ichida 1 yillik kontrakt to'lovingizni (50% yarim) kontrakt to'lovini bank orqali universitet xisobiga amalga oshirishingiz kerak bo'ladi.
+                                    </h1>
+                                    <h1>
+                                        Shoshiling joylar soni cheklangan. Qabullar tez orada tugaydi.
+                                    </h1>
+                                    <h1>
+                                        BIZDA BARCHA XIZMATLAR BEPUL!
+                                    </h1>
+                                    <h1 className=''>
+                                        «FUTURE STUDY» bilan 2025 yilda Turkiya Universitetlarida hech qanday imtihonsiz va ortiqcha firma to’lovlarsiz talaba bo’ling!
+                                    </h1>
+                                </span>
+
+                            </span>
+
+                        </span>
+
 
                     </span>
 
