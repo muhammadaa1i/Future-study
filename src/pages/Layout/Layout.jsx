@@ -162,7 +162,7 @@ const Layout = () => {
                             <span className='flex flex-row gap-6 mb-2'>
                                 <a
                                     target='_blank'
-                                    href="https://t.me/future_studyuz" className="flex items-center gap-3">
+                                    href="https://t.me/futurestudyuz" className="flex items-center gap-3">
                                     <i className="fa-brands fa-telegram text-5xl"></i>
                                 </a>
                                 <a

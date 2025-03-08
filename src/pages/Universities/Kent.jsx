@@ -440,7 +440,7 @@ const Kent = () => {
                                     <h1>
                                         BIZDA BARCHA XIZMATLAR BEPUL!
                                     </h1>
-                                    <h1 className=''>
+                                    <h1>
                                         «FUTURE STUDY» bilan 2025 yilda Turkiya Universitetlarida hech qanday imtihonsiz va ortiqcha firma to’lovlarsiz talaba bo’ling!
                                     </h1>
                                 </span>
@@ -448,7 +448,6 @@ const Kent = () => {
                             </span>
 
                         </span>
-
 
                     </span>
 
