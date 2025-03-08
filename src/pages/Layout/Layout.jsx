@@ -155,17 +155,21 @@ const Layout = () => {
                             <h1 className="text-lg font-medium uppercase sm:text-xl">Kontakt:</h1>
                             <div className="flex flex-col items-start gap-1">
                                 <p className="text-lg font-extralight">Tel:</p>
-                                <a className="text-lg font-extralight text-white no-underline" href="tel:+998958233030">+998 77 144 57 77</a>
-                                <a className="text-lg font-extralight text-white no-underline" href="tel:+998955153030">+998 77 205 37 77</a>
+                                <a className="text-lg font-extralight text-white no-underline" href="tel:+998771445777">+998 77 144 57 77</a>
+                                <a className="text-lg font-extralight text-white no-underline" href="tel:+998772053777">+998 77 205 37 77</a>
                             </div>
                             <h1 className="text-lg font-medium uppercase sm:text-xl">Ijtimoiy tarmoqlar:</h1>
                             <a href="https://t.me/future_studyuz" className="flex items-center gap-3">
-                                <i className="fa-brands fa-telegram text-3xl"></i> future study
+                                <i className="fa-brands fa-telegram text-4xl"></i>
                             </a>
                             <a href="https://www.instagram.com/future.study.uz" className="flex items-center gap-3">
-                                <i className="fa-brands fa-instagram text-3xl"></i> future.study.uz
+                                <i className="fa-brands fa-instagram text-4xl"></i>
                             </a>
-                            <a href="https://www.google.com/maps?q=41.349947,69.288288" className="flex items-center gap-3">
+                            <a
+                                href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.5162143970906!2d69.29833217520184!3d41.31938700021172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef4daeb07b8cb%3A0x4c569a4f61ce0cb5!2sDarhan%20Business%20Center!5e0!3m2!1sen!2s!4v1740838627208!5m2!1sen!2s"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-3">
                                 <i className="fa-solid fa-location-dot text-3xl"></i> Mustaqillik 88A, Darhan Business center
                             </a>
                         </div>
