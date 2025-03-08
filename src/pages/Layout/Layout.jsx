@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import logo from '../../images/logo.jpg'
 import { Link, Outlet, useLocation } from 'react-router-dom'
-import Accordion from 'react-bootstrap/Accordion';
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Layout = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -19,9 +20,13 @@ const Layout = () => {
         }
     }, [isOpen])
 
+    useEffect(() => {
+        Aos.init({ duration: 800 })
+    }, [])
+
     return (
         <>
-            <header className='header  h-[10vh]'>
+            <header className='header h-[10vh]'>
 
                 <nav className='nav w-[100vw] z-30 h-[10vh] bg-[#004D91] flex flex-row items-center justify-between fixed top-0 left-0 shadow-2xl overflow-hidden '>
 
@@ -75,7 +80,7 @@ const Layout = () => {
                             </li>
                             <li className={`relative flex flex-row gap-2 items-center`}>
                                 <Link className="text-[#004D91] no-underline flex flex-row items-center gap-1 pl-0.5" to="/programs" onClick={() => setIsOpen(false)}>
-                                    <i class="fa-solid fa-universal-access"></i>
+                                    <i className="fa-solid fa-universal-access"></i>
                                     <p>
                                         Dasturlar
                                     </p></Link>
@@ -85,7 +90,7 @@ const Layout = () => {
                             </li>
                             <li className={`relative flex flex-row gap-2 items-center`}>
                                 <Link className="text-[#004D91] no-underline flex flex-row items-center gap-1 pl-0.5" to="/universities" onClick={() => setIsOpen(false)}>
-                                    <i class="fa-solid fa-building-columns"></i>
+                                    <i className="fa-solid fa-building-columns"></i>
                                     <p>
                                         Universitetlar
                                     </p>
@@ -96,10 +101,13 @@ const Layout = () => {
                                 {pathname === '/kent' && (
                                     <div className={`underline absolute left-3 sm:left-0 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[160px]' : 'w-0'} ${isOpen ? 'sm:w-[200px]' : 'w-0'} h-[2px] bg-[#004D91] transition-all duration-[1000ms] ease-in-out`}></div>
                                 )}
+                                {pathname === '/beykent' && (
+                                    <div className={`underline absolute left-3 sm:left-0 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[160px]' : 'w-0'} ${isOpen ? 'sm:w-[200px]' : 'w-0'} h-[2px] bg-[#004D91] transition-all duration-[1000ms] ease-in-out`}></div>
+                                )}
                             </li>
                             <li className={`relative flex flex-row gap-2 items-center`}>
                                 <Link className="text-[#004D91] no-underline flex flex-row items-center gap-1 pl-0.5" to="/services" onClick={() => setIsOpen(false)}>
-                                    <i class="fa-solid fa-recycle "></i>
+                                    <i className="fa-solid fa-recycle "></i>
                                     <p>
                                         Xizmatlar
                                     </p>
@@ -110,7 +118,7 @@ const Layout = () => {
                             </li>
                             <li className={`relative flex flex-row gap-2 items-center`}>
                                 <Link className="text-[#004D91] no-underline flex flex-row items-center gap-1 pl-0.5" to="/turkey" onClick={() => setIsOpen(false)}>
-                                    <i class="fa-solid fa-earth-europe"></i>
+                                    <i className="fa-solid fa-earth-europe"></i>
                                     <p>
                                         Turkiya
                                     </p>

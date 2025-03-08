@@ -4,10 +4,10 @@ import uni from '../../images/uni.jpg'
 import { TypeAnimation } from 'react-type-animation'
 import Aos from 'aos'
 import kent from '../../images/kent.png'
-import { Link, Outlet } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import beykentlogo from '../../images/beykentlogo.jpg'
 
 const Universities = () => {
-
     useEffect(() => {
         Aos.init({ duration: 800 })
     }, [])
@@ -66,11 +66,19 @@ const Universities = () => {
                 <div className="absolute inset-0 bg-gray-300 animate-pulse"></div>
             )}
 
-            <section className='flex flex-col items-center justify-center px-4 py-8'>
+            <section className='flex flex-col items-center justify-center gap-8 px-4 py-8'>
                 <Link to='/kent' className='px-4 flex flex-col items-center justify-center border-2 border-[#004D91] rounded-xl max-w-[350px] m-auto w-full h-auto py-5'>
                     <img
                         className='max-w-[350px] w-full h-full mx-auto mt-[-30px]'
                         src={kent}
+                        alt="Istanbul Kent University" />
+                    <div className='max-w-[350px] w-full h-auto py-2 text-center rounded-2xl text-[18px] text-white bg-[#004D91] mt-[-20px] px-2 '>Universitet haqida ma'lumot olish</div>
+                </Link>
+
+                <Link to='/beykent' className='px-4 flex flex-col items-center justify-center border-2 border-[#004D91] rounded-xl max-w-[350px] m-auto w-full h-auto py-5'>
+                    <img
+                        className='max-w-[250px] w-full h-full mx-auto mb-[40px]'
+                        src={beykentlogo}
                         alt="Istanbul Kent University" />
                     <div className='max-w-[350px] w-full h-auto py-2 text-center rounded-2xl text-[18px] text-white bg-[#004D91] mt-[-20px] px-2 '>Universitet haqida ma'lumot olish</div>
                 </Link>

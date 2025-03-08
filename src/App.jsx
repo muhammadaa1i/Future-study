@@ -5,8 +5,9 @@ import Programs from './pages/Programs/Programs'
 import Universities from './pages/Universities/Universities'
 import Turkey from './pages/Turkey/Turkey'
 import Home from './pages/Home/Home'
-import Services from './pages/Turkey/Turkey'
+import Services from './pages/Services/Services'
 import Kent from './pages/Universities/Kent'
+import Beykent from './pages/Universities/Beykent'
 
 const App = () => {
   return (
@@ -15,10 +16,11 @@ const App = () => {
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="programs" element={<Programs />} />
-          <Route path="universities" element={<Universities />}/>
-          <Route path="services" element={<Services />} />
+          <Route path="universities" element={<Universities />} />
+          <Route path="services" element={<Services/>} />
           <Route path="turkey" element={<Turkey />} />
           <Route path="kent" element={<Kent />} />
+          <Route path='beykent' element={<Beykent />} />
         </Route>
       </Routes>
     </BrowserRouter>

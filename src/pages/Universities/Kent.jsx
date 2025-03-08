@@ -10,7 +10,6 @@ import kentvid3 from '../../videos/kentvid3.mp4'
 import poster4 from '../../images/poster4.png'
 
 const Kent = () => {
-
     useEffect(() => {
         Aos.init({ duration: 800 })
     }, [])
@@ -147,7 +146,6 @@ const Kent = () => {
                         poster={poster2}
                         data-aos="zoom-in"
                         className='w-full h-full max-[550px]:m-auto max-h-[450px] max-w-[250px] min-[550px]:mt-[50px] mr-2 md:max-h-[350px] min-[900px]:max-w-[200px] rounded-2xl lg:mr-20 shadow-2xl'
-                        onLoadedData={() => setIsLoading(false)}
                         src={kentvid1}>
                     </video>
                 </section>
@@ -210,7 +208,6 @@ const Kent = () => {
                         poster={poster3}
                         data-aos="zoom-in"
                         className='w-full h-full max-[550px]:m-auto max-h-[450px] max-w-[250px] min-[550px]:mt-[50px] mr-2 md:max-h-[350px] min-[900px]:max-w-[200px] rounded-2xl lg:mr-20 shadow-2xl'
-                        onLoadedData={() => setIsLoading(false)}
                         src={kentvid2}>
                     </video>
 
@@ -342,7 +339,6 @@ const Kent = () => {
                             poster={poster4}
                             data-aos="zoom-in"
                             className='w-full h-full max-[550px]:m-auto max-h-[450px] max-w-[250px] min-[550px]:mt-[50px] mr-2 md:max-h-[350px] min-[900px]:max-w-[200px] rounded-2xl lg:mr-20 shadow-2xl'
-                            onLoadedData={() => setIsLoading(false)}
                             src={kentvid3}>
                         </video>
 

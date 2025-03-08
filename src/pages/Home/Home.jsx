@@ -93,7 +93,6 @@ const Home = () => {
                         poster={poster}
                         data-aos="zoom-in"
                         className='w-full h-full max-[550px]:m-auto max-h-[450px] max-w-[250px] min-[550px]:mt-[-30px] mr-2 md:max-h-[350px] md:mt-[-30px] min-[900px]:max-w-[200px] rounded-2xl lg:mr-20 shadow-2xl'
-                        onLoadedData={() => setIsLoading(false)}
                         src={mainvid}>
                     </video>
                 </div>
