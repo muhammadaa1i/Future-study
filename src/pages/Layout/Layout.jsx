@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import logo from '../../images/logo.jpg'
+import logo from '../../images/nobglogo.jpg'
 import { Link, Outlet, useLocation } from 'react-router-dom'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import './Layout.css'
+import navbg from '../../images/navbarbg.png'
 
 const Layout = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -28,17 +30,23 @@ const Layout = () => {
         <>
             <header className='header h-[10vh]'>
 
-                <nav className='nav w-[100vw] z-30 h-[10vh] bg-[#004D91] flex flex-row items-center justify-between fixed top-0 left-0 shadow-2xl overflow-hidden '>
+                <nav
+                    style={{
+                        backgroundImage: ` url(${navbg})`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "contain",
+                        backgroundPosition: "center"
+                    }}
+                    className='nav w-[100vw] z-30 h-[10vh] bg-white flex flex-row items-center justify-between fixed top-0 left-0 shadow-2xl overflow-hidden '>
 
                     <a href="/">
-                        <img className='h-[10vh]' src={logo} alt="logo of company" />
+                        <img className='h-[9vh] logo' src={logo} alt="logo of company" />
                     </a>
                     <div className='flex flex-row items-center justify-between gap-4'>
-                        <a className='text-white text-[16px] md:hidden' href="tel:+998 77 144 57 77">+998 77 144 57 77</a>
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             className="menu-btn w-11 h-11 mr-4 md:hidden">
-                            <i className="bars fa-solid fa-bars text-2xl text-gray-50"></i>
+                            <i className="bars fa-solid fa-bars text-2xl text-[#004D91]"></i>
                         </button>
                     </div>
 
@@ -107,13 +115,13 @@ const Layout = () => {
                             </li>
                             <li className={`relative flex flex-row gap-2 items-center`}>
                                 <Link className="text-[#004D91] no-underline flex flex-row items-center gap-1 pl-0.5" to="/services" onClick={() => setIsOpen(false)}>
-                                    <i className="fa-solid fa-recycle "></i>
+                                    <i className="fa-solid fa-plane rotate-[330deg]"></i>
                                     <p>
-                                        Xizmatlar
+                                        Transfer xizmati
                                     </p>
                                 </Link>
                                 {pathname === '/services' && (
-                                    <div className={`underline absolute left-3 sm:left-0 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[160px]' : 'w-0'} ${isOpen ? 'sm:w-[200px]' : 'w-0'} h-[2px] bg-[#004D91] transition-all duration-[1000ms] ease-in-out`}></div>
+                                    <div className={`underline absolute left-3 sm:left-0 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[175px]' : 'w-0'} ${isOpen ? 'sm:w-[220px]' : 'w-0'} h-[2px] bg-[#004D91] transition-all duration-[1000ms] ease-in-out`}></div>
                                 )}
                             </li>
                             <li className={`relative flex flex-row gap-2 items-center`}>

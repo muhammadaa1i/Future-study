@@ -1,0 +1,23 @@
+@keyframes flip-scale {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(0.6);
+    }
+    75%{
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }    
+}
+
+.logo {
+    height: 9vh;
+    animation: flip-scale 3s linear infinite; 
+    transform-style: preserve-3d;
+}
