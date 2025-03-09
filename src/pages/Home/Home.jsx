@@ -9,7 +9,8 @@ import poster from '../../images/poster.png'
 import students from '../../images/students.jpg'
 import CountUp from 'react-countup'
 import { useInView } from 'react-intersection-observer'
-import union from '../../images/union.png'
+import vid6 from '../../videos/vid6.mp4'
+import poster7 from '../../images/poster7.jpg'
 
 const Home = () => {
 
@@ -89,7 +90,7 @@ const Home = () => {
                         className="mt-4 leading-relaxed font-medium lg:max-w-[700px] lg:text-[20px]">
                         Future Study Education Consulting – bu xalqaro ta’lim sohasida yetakchi kompaniyalardan biri bo‘lib, yoshlar uchun dunyoning eng nufuzli universitetlarida o‘qish imkoniyatlarini yaratishga ixtisoslashgan. Biz Turkiya va boshqa mamlakatlardagi top universitetlarga kirish jarayonida abituriyentlarga to‘liq qo‘llab-quvvatlash xizmatlarini taqdim etamiz.
                     </h1>
-                    <video controls 
+                    <video controls
                         poster={poster}
                         data-aos="zoom-in"
                         className='w-full h-full max-[550px]:m-auto max-h-[450px] max-w-[250px] min-[550px]:mt-[-30px] mr-2 md:max-h-[350px] md:mt-[-30px] min-[900px]:max-w-[200px] rounded-2xl lg:mr-20 shadow-2xl'
@@ -100,7 +101,7 @@ const Home = () => {
                 <section className="flex flex-col items-start mt-8 max-sm:mb-[-10px]">
                     <div
                         data-aos="fade-right"
-                        className="bg-[#020202] h-[2px] max-w-[200px] md:max-w-[220px] md:h-[3px] w-full rounded-lg lg:max-w-[260px]"></div>
+                        className="bg-[#004D91] h-[2px] max-w-[200px] md:max-w-[220px] md:h-[3px] w-full rounded-lg lg:max-w-[260px]"></div>
                     <h1
                         data-aos="fade-right"
                         className="text-2xl md:text-3xl lg:text-3xl font-semibold uppercase mt-2">Nega Aynan Biz?</h1>
@@ -108,19 +109,16 @@ const Home = () => {
 
                 <section className="space-y-4 text-lg leading-relaxed relative flex flex-col gap-8">
                     <div className='flex flex-col gap-4'>
-                        <span>
-                            <h1
-                                data-aos="fade-right"
-                                className='mt-6 leading-relaxed font-bold lg:text-[20px]'>1. Rasmiy Hamkorlik</h1>
-                            <h1
-                                data-aos="fade-right"
-                                className='leading-relaxed font-medium lg:text-[20px] md:max-w-[400px] lg:max-w-[500px]'>
-                                Biz Turkiyaning eng yaxshi universitetlari bilan bevosita hamkorlik qilamiz. Hamkorlarimiz qatorida Istanbul Kent University, Marmara University, Beykoz University va yana 30 dan ortiq universitetlar bor.
-                            </h1>
-                        </span>
-                        <section className='flex flex-col gap-4'>
+                        <section className='flex flex-col min-[550px]:flex-row gap-4'>
                             <div className='flex flex-col'>
-
+                                <h1
+                                    data-aos="fade-right"
+                                    className='mt-6 leading-relaxed font-bold lg:text-[20px]'>1. Rasmiy Hamkorlik</h1>
+                                <h1
+                                    data-aos="fade-right"
+                                    className='leading-relaxed font-medium lg:text-[20px] md:max-w-[400px] lg:max-w-[500px]'>
+                                    Biz Turkiyaning eng yaxshi universitetlari bilan bevosita hamkorlik qilamiz. Hamkorlarimiz qatorida Istanbul Kent University, Marmara University, Beykoz University va yana 30 dan ortiq universitetlar bor.
+                                </h1>
                                 <h1
                                     data-aos="fade-right"
                                     className='leading-relaxed font-bold lg:text-[20px]'>2. 100% Kafolatlangan Natija</h1>
@@ -130,11 +128,12 @@ const Home = () => {
                                     Biz orqali hujjat topshirgan har bir talabaga kafolatlangan qabul beriladi.
                                 </h1>
                             </div>
-                            <img
-                                data-aos="zoom-out"
-                                src={union} alt="image from university"
-                                className='w-full h-full m-auto max-w-[450px] max-h-[400px] md:max-w-[350px] md:max-h-[350px] md:right-6 md:mt-6 md:absolute lg:max-w-[450px] lg:max-h-[450px]'
-                            />
+                            <video controls
+                                poster={poster7}
+                                data-aos="zoom-in"
+                                className='w-full h-full max-[550px]:m-auto max-h-[450px] max-w-[250px] mr-2 rounded-2xl lg:mr-20 shadow-2xl'
+                                src={vid6}>
+                            </video>
                         </section>
                     </div>
                     <div className='flex flex-col gap-4'>

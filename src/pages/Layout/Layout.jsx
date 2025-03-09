@@ -40,7 +40,7 @@ const Layout = () => {
                         backgroundPosition: "center",
                         backgroundAttachment: "scroll"
                     }}
-                    className='nav w-[100vw] z-30 h-[10vh] bg-white flex flex-row items-center justify-between fixed top-0 left-0 shadow-2xl overflow-hidden '>
+                    className='nav w-[100vw] z-30 h-[60px] bg-white flex flex-row items-center justify-between fixed top-0 left-0 shadow-2xl overflow-hidden '>
 
                     <a href="/">
                         <img className='h-[9vh] logo max-[450px]:h-[7vh]' src={logo} alt="logo of company" />
@@ -73,7 +73,7 @@ const Layout = () => {
                         </ul>
                     </section>
 
-                    <section className={`mobile-menu fixed top-0 right-0 h-full w-[50%] max-[500px]:w-[60%] max-[400px]:w-[75%] bg-gray-50 shadow-lg transform md:hidden ${isOpen ? "translate-x-0" : "translate-x-full"} z-20 transition-transform duration-500 ease-in-out `}>
+                    <section className={`mobile-menu fixed top-0 right-0 h-full w-[50%] max-[500px]:w-[60%] max-[400px]:w-[75%] bg-gray-50 shadow-lg transform md:hidden ${isOpen ? "translate-x-0" : "translate-x-full"} z-50 transition-transform duration-500 ease-in-out `}>
                         <div className="w-auto h-auto flex flex-row justify-between items-center p-3">
                             <button onClick={() => setIsOpen(false)} className="fa-solid fa-x text-2xl max-sm:text-lg"></button>
                         </div>
@@ -157,7 +157,7 @@ const Layout = () => {
                 target='_blank'
                 className='telegram-logo'>
                 <img
-                    className='w-14 h-14 rounded-[50%] z-[999] bottom-5 left-4 fixed shadow-glow'
+                    className='w-14 h-14 rounded-[50%] z-[30] bottom-5 left-4 fixed shadow-glow'
                     src={tglogo}
                     alt="telegram logo" />
             </a>
@@ -167,7 +167,7 @@ const Layout = () => {
                 target='_blank'
                 className='whatsapp-logo w-auto h-auto p-0'>
                 <img
-                    className='w-14 h-14 rounded-[50%] z-[999] bottom-5 right-4 fixed shadow-glow'
+                    className='w-14 h-14 rounded-[50%] z-[30] bottom-5 right-4 fixed shadow-glow'
                     src={whlogo}
                     alt="telegram logo" />
             </a>

@@ -122,21 +122,20 @@ const Beykent = () => {
                     </h1>
                 </section>
 
-                <section className="flex flex-col mt-8 max-sm:mb-[-10px]">
+                <section className="flex flex-col mt-8">
                     <div
                         data-aos="fade-right"
                         className="bg-[#004D91] h-[2px] w-[100%] m-auto rounded-lg"></div>
                     <h1
                         data-aos="fade-right"
-                        className="text-2xl text-center md:text-3xl font-semibold uppercase">Beykent universiteti: kelajagingizni shakllantiring!</h1>
+                        className="text-2xl text-center md:text-3xl font-semibold uppercase">Beykent universitetida  kelajagingizni shakllantiring</h1>
                 </section>
 
                 <section className='flex max-[550px]:flex-col gap-6 flex-row justify-between'>
                     <span
                         data-aos="fade-right"
                         className="mt-4 leading-relaxed flex flex-col gap-3 font-medium lg:max-w-[700px] lg:text-[20px]">
-
-                        <h1 className='mt-[-8px]'>
+                        <h1>
                             Istanbul Beykent universiteti ilg'or ta'lim infratuzilmasi va keng qamrovli o'quv dasturlari bilan o'z talabalariga zamonaviy ta'lim muhitini taklif etadi. Mutaxassis akademik xodimlarimiz, innovatsion tadqiqot imkoniyatlari va xalqaro hamkorlik tufayli talabalarimiz nazariy bilimlarni ham, amaliy dasturlarni ham eng yaxshi tarzda o'rganadilar. Keng qamrovli stipendiya imkoniyatlari, dinamik kampus hayoti va sohaviy aloqalar bizning talabalarimizga martaba maqsadlariga erishishda kuchli yordam beradi.
                         </h1>
                     </span>

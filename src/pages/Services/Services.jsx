@@ -5,6 +5,7 @@ import Aos from 'aos';
 import st3 from '../../images/st3.jpg'
 import st4 from '../../images/st4.jpg'
 
+
 const Services = () => {
     useEffect(() => {
         Aos.init({ duration: 800 })
@@ -139,7 +140,7 @@ const Services = () => {
                         <i className="fa-solid fa-pen-to-square text-[24px]"></i>
                     </a>
                 </section>
-
+                
                 <section className="flex flex-col mt-8 ">
                     <div
                         data-aos="zoom-out-up"

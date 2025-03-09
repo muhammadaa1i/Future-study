@@ -3,8 +3,10 @@ import students2 from '../../images/students2.jpg'
 import { TypeAnimation } from "react-type-animation"
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import st3 from '../../images/st3.jpg'
-import st4 from '../../images/st4.jpg'
+import vid4 from '../../videos/vid4.mp4'
+import poster5 from '../../images/poster5.jpg'
+import vid5 from '../../videos/vid5.mp4'
+import poster6 from '../../images/poster6.jpg'
 
 const Programs = () => {
 
@@ -81,7 +83,7 @@ const Programs = () => {
                         className="text-2xl text-center md:text-3xl font-semibold uppercase">Turk tili ko'nikmalarini rivojlantirish va til ta'limi yordamlari:</h1>
                 </section>
 
-                <div className='flex max-[550px]:flex-col gap-6 flex-row justify-between'>
+                <div className='flex max-[550px]:flex-col gap-6 flex-row justify-between mb-6'>
                     <h1
                         data-aos="fade-right"
                         className="mt-4 leading-relaxed font-medium lg:max-w-[700px] lg:text-[20px]">
@@ -89,23 +91,12 @@ const Programs = () => {
                     </h1>
                 </div>
 
-                <section
-                    data-aos='zoom-in'
-                    className='w-[85vw] h-[50vh] m-auto mt-8 text-white text-center flex items-center justify-center rounded-4xl'
-                    style={{
-                        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.712)), url(${st3})`,
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
-                        backgroundPosition: "center"
-                    }}>
-                    <a
-                        onClick={handleScroll}
-                        href='#form'
-                        className='text-white bg-[#004D91] w-[240px] h-16 rounded-xl flex flex-row items-center justify-evenly '>
-                        <h4 className='text-[18px] max-w-[150px] w-full'>Ma'lumotlaringizni qoldiring</h4>
-                        <i className="fa-solid fa-pen-to-square text-[24px]"></i>
-                    </a>
-                </section>
+                <video controls
+                    poster={poster5}
+                    data-aos="zoom-in"
+                    className='w-full h-full max-[550px]:m-auto max-h-[450px] max-w-[250px] mr-2 md:max-h-[350px] min-[900px]:max-w-[200px] rounded-2xl lg:mr-20 shadow-2xl'
+                    src={vid4}>
+                </video>
 
                 <section className="flex flex-col mt-8 max-sm:mb-[-10px]">
                     <div
@@ -133,31 +124,20 @@ const Programs = () => {
                         className="text-2xl text-center md:text-3xl font-semibold uppercase">Ko'p tilli ta'lim imkoniyatlari:</h1>
                 </section>
 
-                <div className='flex max-[550px]:flex-col gap-6 flex-row justify-between'>
+                <div className='flex max-[550px]:flex-col gap-6 flex-row justify-between mb-4'>
                     <h1
                         data-aos="zoom-out"
                         className="mt-4 leading-relaxed font-medium lg:max-w-[700px] lg:text-[20px]">
                         Turkiyadagi ta'lim muassasalari talabalarga ingliz, frantsuz va nemis kabi turli chet tillarida ta'lim olish imkoniyatini beradi. Bu imkoniyatlar talabalarga til koʻnikmalarini yaxshilaydigan va akademik muvaffaqiyatlarini qoʻllab-quvvatlovchi qoʻshimcha til kurslariga kirish imkonini beradi. Ushbu til o'qitish dasturlari odatda intensiv tarzda ishlab chiqilgan va bir o'quv yili davom etadi.
                     </h1>
                 </div>
-
-                <section
-                    data-aos='zoom-in'
-                    className='w-[90vw] h-[60vh] m-auto mt-8 text-white text-center flex items-center justify-center rounded-4xl'
-                    style={{
-                        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.712)), url(${st4})`,
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
-                        backgroundPosition: "center"
-                    }}>
-                    <a
-                        onClick={handleScroll}
-                        href='#form'
-                        className='text-white bg-[#004D91] w-[240px] h-12 rounded-xl gap-2 flex flex-row items-center  justify-center '>
-                        <h4 className='text-[18px]'>Biz bilan bo'g'laning</h4>
-                        <i class="fa-solid fa-headset text-[18px]"></i>
-                    </a>
-                </section>
+               
+                <video controls
+                    poster={poster6}
+                    data-aos="zoom-in"
+                    className='w-full h-full max-[550px]:m-auto max-h-[450px] max-w-[250px] mr-2 md:max-h-[350px] min-[900px]:max-w-[200px] rounded-2xl lg:mr-20 shadow-2xl'
+                    src={vid5}>
+                </video>
 
                 <section className="flex flex-col mt-8 max-sm:mb-[-10px]">
                     <div
