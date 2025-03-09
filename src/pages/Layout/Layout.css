@@ -31,3 +31,19 @@
 .shadow-glow {
     animation: glow 1.5s infinite alternate ease-in-out;
 }
+
+nav {
+    background-size: contain !important; 
+    height: 10vh !important; 
+}
+
+.logo {
+    height: 9vh !important; 
+    width: auto; 
+}
+
+@media (max-width: 450px) {
+    .logo {
+        height: 7vh !important;
+    }
+}

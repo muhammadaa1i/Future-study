@@ -157,7 +157,7 @@ const Layout = () => {
                 target='_blank'
                 className='telegram-logo'>
                 <img
-                    className='w-12 h-12 rounded-[50%] z-[999] bottom-4 left-4 fixed shadow-glow'
+                    className='w-14 h-14 rounded-[50%] z-[999] bottom-5 left-4 fixed shadow-glow'
                     src={tglogo}
                     alt="telegram logo" />
             </a>
@@ -167,7 +167,7 @@ const Layout = () => {
                 target='_blank'
                 className='whatsapp-logo w-auto h-auto p-0'>
                 <img
-                    className='w-12 h-12 rounded-[50%] z-[999] bottom-4 right-4 fixed shadow-glow'
+                    className='w-14 h-14 rounded-[50%] z-[999] bottom-5 right-4 fixed shadow-glow'
                     src={whlogo}
                     alt="telegram logo" />
             </a>
