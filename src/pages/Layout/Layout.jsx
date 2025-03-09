@@ -5,6 +5,8 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import './Layout.css'
 import navbg from '../../images/navbarbg.png'
+import tglogo from '../../images/tglogo.webp'
+import whlogo from '../../images/whlogo.png'
 
 const Layout = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -35,23 +37,24 @@ const Layout = () => {
                         backgroundImage: ` url(${navbg})`,
                         backgroundRepeat: "no-repeat",
                         backgroundSize: "contain",
-                        backgroundPosition: "center"
+                        backgroundPosition: "center",
+                        backgroundAttachment: "scroll"
                     }}
                     className='nav w-[100vw] z-30 h-[10vh] bg-white flex flex-row items-center justify-between fixed top-0 left-0 shadow-2xl overflow-hidden '>
 
                     <a href="/">
-                        <img className='h-[9vh] logo' src={logo} alt="logo of company" />
+                        <img className='h-[9vh] logo max-[450px]:h-[7vh]' src={logo} alt="logo of company" />
                     </a>
                     <div className='flex flex-row items-center justify-between gap-4'>
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="menu-btn w-11 h-11 mr-4 md:hidden">
+                            className="menu-btn w-11 h-11 mr-1 md:hidden">
                             <i className="bars fa-solid fa-bars text-2xl text-[#004D91]"></i>
                         </button>
                     </div>
 
                     <section className='menu hidden md:block'>
-                        <ul className='nav-links flex flex-row items-center text-white justify-center gap-6 mr-12'>
+                        <ul className='nav-links flex flex-row items-center text-[#004D91] justify-center gap-6 mr-12'>
                             <li>
                                 <Link className="no-underline text-[18px] font-normal transition-transform duration-300 hover:translate-2" to="/">Bosh sahifa</Link>
                             </li>
@@ -148,6 +151,26 @@ const Layout = () => {
                     onClick={() => setIsOpen(false)}
                 ></div>
             )}
+
+            <a
+                href='https://t.me/futurestudyuz'
+                target='_blank'
+                className='telegram-logo'>
+                <img
+                    className='w-12 h-12 rounded-[50%] z-[999] bottom-4 left-4 fixed shadow-glow'
+                    src={tglogo}
+                    alt="telegram logo" />
+            </a>
+
+            <a
+                href='https://wa.me/998771445777'
+                target='_blank'
+                className='whatsapp-logo w-auto h-auto p-0'>
+                <img
+                    className='w-12 h-12 rounded-[50%] z-[999] bottom-4 right-4 fixed shadow-glow'
+                    src={whlogo}
+                    alt="telegram logo" />
+            </a>
 
             <main>
                 <Outlet />
